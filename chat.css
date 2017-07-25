@@ -1,0 +1,257 @@
+body{
+    margin: 0 auto;
+    width: 400px;
+}
+
+
+#login-screen{
+    background-image: url('fire.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    background-position: center;
+    position: relative;
+
+}
+
+.overlay{
+    background-color: rgba(255,196,196, .7);
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo{
+    height: 175px;
+    width:100px;
+    top: 0;
+    margin-bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content:space-around;
+}
+
+.white-box-logo{
+    height: 75%;
+    width:100%;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.line{
+    height:10px;
+    width: 30px;
+    background-color: #000;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+}
+
+.white-box-logo > div:first-child{
+        flex-grow: 2;
+        margin-top: 25px;
+    }
+
+.white-box-logo > div:nth-child(2){
+    margin-bottom: 25px;
+    }
+
+.empty-child{
+    height:0;
+    width: 35px;
+    margin-bottom: 25px;
+}
+
+.grey-triangle{
+    background-image: url('grey-triangle.png');
+    bottom: 0;
+    left: 0;
+    height: 45px;
+    width: 37px;
+    margin: 0 auto 0 0;
+    opacity: 1;
+}
+
+.logo h1{
+    margin: 0 auto;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.white-box{
+    width: 80%;
+    height: 25vh;
+    background-color: #fff;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login{
+    padding: 1rem;
+    background: linear-gradient(#063787, #04275e, #063787);
+    color: #fff;
+    text-shadow: 0 2px 0 #666;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 0 1px 0 #666, 0 2px 3px #444, 0 6px 6px rgba(0,0,0,0.6);
+}
+
+#login:hover{
+    background-color: #42f4f1;
+}
+
+
+#chat-screen{
+    background-image: url('fire2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    background-position: center;
+    position: relative;
+    display: none;
+}
+
+.overlay2{
+    background-color: rgba(255,196,196, .5);
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blackbar-nav{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.triangle-left{
+    background-image: url('triangle-left.svg');
+    color: #fff;
+    display: flex;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.blackbar-nav h4{
+    color:rgb(255, 196, 196);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+.empty-child2{
+    height: 0;
+    width: 50px;
+}
+
+#messages{
+    height: 83%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.message-container {
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 40%;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 15px 15px 5px rgba(86,85,85, .3);
+}
+
+.msgtxt {
+    display: inline-block;
+    color:#282828;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.right {
+    margin-left: 40%;
+}
+
+.left {
+    margin-left: 10%;
+}
+
+.photo-r{
+    float: right;
+    margin-top: -25px;
+    margin-right: -35px;
+    height: 40px;
+    width: 40px;
+    margin-left: -20px;
+    display: inline-block;
+    box-shadow: -10px 10px 7px 3px rgba(137,136,136, .2);
+
+}
+
+.photo-l{
+    float: left;
+    margin-top: -25px;
+    margin-left: -35px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    box-shadow: 10px 10px 7px 3px rgba(137,136,136, .2);
+}
+
+.blackbar-messages{
+    width: 100%;
+    height:50px;
+    background-color: #000;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+}
+
+#message-input{
+    background-color: #000;
+    border: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 196, 196);
+    width: 80%;
+    height: 45px;
+    position:relative;
+    margin-left: 25px;
+
+}
+
+#send-message{
+    background-color: #000;
+    color: rgb(255, 196, 196);
+    border: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    right: 0;
+}

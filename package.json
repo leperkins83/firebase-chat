@@ -1,0 +1,22 @@
+{
+  "name": "firebase-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "reload -b"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leperkins83/firebase-chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leperkins83/firebase-chat/issues"
+  },
+  "homepage": "https://github.com/leperkins83/firebase-chat#readme"
+}
